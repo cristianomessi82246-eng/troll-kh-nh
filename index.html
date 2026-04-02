@@ -5,127 +5,120 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HỒ SƠ MẬT • CHIẾN DỊCH TƯỜNG VI</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&display=swap');
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Orbitron:wght@500;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- BACKGROUND GRID -->
   <div class="grid-bg"></div>
 
-  <!-- SCREEN 1: LOADING -->
-  <div id="screen-loading" class="screen active">
-    <div class="terminal">
-      <div class="header">
-        <span class="dot red"></span>
-        <span class="dot yellow"></span>
-        <span class="dot green"></span>
-        <span class="title-bar">SYSTEM • ACCESSING CLASSIFIED FILES</span>
-      </div>
-      <h1 class="glitch" data-text="ĐANG TRUY CẬP...">ĐANG TRUY CẬP...</h1>
-      <div class="loading-bar">
-        <div id="progress" class="progress"></div>
-      </div>
-      <p id="loading-text" class="scanline">Decrypting Tường Vi profile... 0%</p>
-      <div class="matrix">0101010101</div>
+  <!-- 1. LOADING -->
+  <div id="screen-1" class="screen active">
+    <div class="glass-container">
+      <h1 class="title-loading glitch" data-text="HACKING KHÁNH...">HACKING KHÁNH...</h1>
+      <div class="loading-bar"><div id="progress" class="progress"></div></div>
+      <p id="loading-text" class="typing"></p>
     </div>
   </div>
 
-  <!-- SCREEN 2: LANDING -->
-  <div id="screen-landing" class="screen">
-    <div class="terminal">
-      <h1 class="neon-title">HỒ SƠ MẬT</h1>
-      <h2 class="target-name">HÀ NGỌC KHÁNH</h2>
-      <p class="subtitle">BÍ DANH: <span class="flower">TƯỜNG VI 🌸</span></p>
-      <div class="classified-stamp">CLASSIFIED • TOP SECRET</div>
-      <button id="btn-access" class="neon-btn">👉 TRUY CẬP HỒ SƠ</button>
+  <!-- 2. LANDING -->
+  <div id="screen-2" class="screen">
+    <div class="glass-container center">
+      <h1 class="main-title">HỒ SƠ MẬT</h1>
+      <h2 class="target">HÀ NGỌC KHÁNH</h2>
+      <p class="subtitle">Chiến dịch Tường Vi • Mã vụ: TV-2025</p>
+      <div class="stamp">TOP SECRET • CHỈ CÓ KHÁNH ĐỌC ĐƯỢC</div>
+      <button id="btn-2" class="neon-btn">BẮT ĐẦU BỐC PHỐT</button>
     </div>
   </div>
 
-  <!-- SCREEN 3: PROFILE -->
-  <div id="screen-profile" class="screen">
-    <div class="terminal card">
-      <div class="profile-header">
-        <div class="avatar">🌸</div>
-        <h2>PROFILE CLASSIFIED</h2>
-      </div>
-      <div class="info-grid">
-        <p><strong>Tên thật:</strong> Hà Ngọc Khánh</p>
+  <!-- 3. PROFILE -->
+  <div id="screen-3" class="screen">
+    <div class="glass-container">
+      <h2 class="section-title">HỒ SƠ ĐỐI TƯỢNG</h2>
+      <div class="profile-info">
+        <p><strong>Tên:</strong> Hà Ngọc Khánh</p>
         <p><strong>Bí danh:</strong> Tường Vi 🌸</p>
-        <p><strong>Class:</strong> Drama Creator • Level 999</p>
+        <p><strong>Vai trò:</strong> Drama Creator &amp; Operator chính</p>
+        <p><strong>Mục tiêu:</strong> Tạo acc giả để tiếp cận crush</p>
       </div>
-      <div class="skills">
-        <strong>SKILLS</strong>
-        <ul>
-          <li>✅ Fake acc 🥷</li>
-          <li>✅ Nhắn tin ẩn danh</li>
-          <li>✅ Stalk story 24/7</li>
-          <li>✅ Tạo drama từ không khí</li>
-        </ul>
-      </div>
-      <div class="weakness">
-        <strong>WEAKNESS</strong>
-        <ul>
-          <li>💀 Bị phát hiện</li>
-          <li>🤡 Plot twist quá đà</li>
-        </ul>
-      </div>
-      <button id="btn-continue" class="neon-btn">👉 TIẾP TỤC CHIẾN DỊCH</button>
+      <button id="btn-3" class="neon-btn">XEM BẰNG CHỨNG</button>
     </div>
   </div>
 
-  <!-- SCREEN 4: TIMELINE -->
-  <div id="screen-timeline" class="screen">
-    <div class="terminal">
-      <h2 class="neon-title">CHIẾN DỊCH TƯỜNG VI — TIMELINE</h2>
+  <!-- 4. EVIDENCE GALLERY (MỚI) -->
+  <div id="screen-4" class="screen">
+    <div class="glass-container">
+      <h2 class="section-title">BẰNG CHỨNG TỪ HỆ THỐNG</h2>
+      <div class="evidence-grid">
+        <div class="evidence-item">📸 Acc Tường Vi đăng story tán crush</div>
+        <div class="evidence-item">💬 Tin nhắn ẩn danh ngày 3</div>
+        <div class="evidence-item">🔗 Link clone profile crush</div>
+        <div class="evidence-item">📍 IP trùng với máy Khánh</div>
+      </div>
+      <button id="btn-4" class="neon-btn">TIẾP TỤC THEO DÕI</button>
+    </div>
+  </div>
+
+  <!-- 5. TIMELINE -->
+  <div id="screen-5" class="screen">
+    <div class="glass-container">
+      <h2 class="section-title">CỐT TRUYỆN CHIẾN DỊCH</h2>
       <div class="timeline">
-        <div class="event"><span class="day">DAY 01</span> Để ý crush 👀</div>
-        <div class="event"><span class="day">DAY 02</span> Tạo acc clone 🌸</div>
-        <div class="event"><span class="day">DAY 03</span> Bắt đầu tán tỉnh ngọt như mía</div>
-        <div class="event"><span class="day">DAY 04</span> Tưởng đã win 😎</div>
-        <div class="event last"><span class="day">DAY 05</span> ...và rồi bị lật tẩy 💀</div>
+        <div class="event"><span>Ngày 1-</span> Khánh để ý crush &amp; lập kế hoạch hoàn hảo để tán ...</div>
+        <div class="event"><span>Ngày 2</span> Tạo acc Tường Vi 🌸 giả mạo để lấy lòng ...</div>
+        <div class="event"><span>Ngày 3</span> Nhắn tin ngọt ngào, ... bắt đầu rep</div>
+        <div class="event"><span>Ngày 4</span> ... tương tác mạnh, Khánh tưởng mình sắp được một cuộc tình trong mơ</div>
+        <div class="event"><span>Ngày 5</span> Hành vi của Khánh bị phát hiện toàn bộ</div>
       </div>
-      <button id="btn-plot" class="neon-btn">👉 XEM KẾT CỤC</button>
+      <button id="btn-5" class="neon-btn">XEM HACKING LOG</button>
     </div>
   </div>
 
-  <!-- SCREEN 5: PLOT TWIST -->
-  <div id="screen-twist" class="screen">
-    <div class="terminal alert-box">
-      <h1 id="alert-title" class="glitch red">SYSTEM ALERT!!!</h1>
-      <p class="big-red">ACC “TƯỜNG VI” = HÀ NGỌC KHÁNH 🤡</p>
-      <p class="twist-text">Bạn đang troll chính mình à? Self-own max level!</p>
-      <button id="btn-accept" class="neon-btn red-btn">👉 CHẤP NHẬN SỰ THẬT</button>
+  <!-- 6. HACKING LOG (MỚI) -->
+  <div id="screen-6" class="screen">
+    <div class="glass-container terminal-log">
+      <h2 class="section-title">HACKING LOG LIVE</h2>
+      <pre id="log-text" class="log">> Connecting to Khánh's device...<br>> Cloning Tường Vi account...<br>> Detecting self-troll activity...<br>> PLOT TWIST LOADED</pre>
+      <button id="btn-6" class="neon-btn">KÍCH HOẠT PLOT TWIST</button>
     </div>
   </div>
 
-  <!-- SCREEN 6: QUIZ -->
-  <div id="screen-quiz" class="screen">
-    <div class="terminal quiz-box">
-      <p class="quiz-progress">Câu <span id="q-number">1</span> / 5 • Điểm hiện tại: <span id="live-score">0</span></p>
+  <!-- 7. PLOT TWIST -->
+  <div id="screen-7" class="screen">
+    <div class="glass-container alert">
+      <h1 id="alert-title" class="glitch">SYSTEM ALERT</h1>
+      <p class="big-text">TÀI KHOẢN “TƯỜNG VI” = HÀ NGỌC KHÁNH</p>
+      <p class="twist-desc">Toàn bộ chiến dịch chỉ là Khánh tự tạo acc giả.<br>Hệ thống đã theo dõi và lật tẩy 100%.</p>
+      <button id="btn-7" class="neon-btn red">CHẤP NHẬN SỰ THẬT ĐAU ĐỚN</button>
+    </div>
+  </div>
+
+  <!-- 8. QUIZ (8 câu - tùm lum hơn) -->
+  <div id="screen-8" class="screen">
+    <div class="glass-container">
+      <p class="quiz-header">KIỂM TRA ĐỘ “TƯỜNG VI” CỦA BẠN</p>
+      <p class="quiz-progress">Câu <span id="q-number">1</span>/8 • Điểm: <span id="live-score">0</span></p>
       <h2 id="question-text" class="question"></h2>
       <div id="answers" class="answers"></div>
     </div>
   </div>
 
-  <!-- SCREEN 7: RESULT -->
-  <div id="screen-result" class="screen">
-    <div class="terminal result-card">
+  <!-- 9. RESULT -->
+  <div id="screen-9" class="screen">
+    <div class="glass-container result">
       <div id="confetti" class="confetti-container"></div>
-      <h2 id="result-title" class="neon-title"></h2>
-      <p id="result-desc"></p>
-      <div class="score-box">
-        <span class="score-label">ĐIỂM CỦA BẠN</span>
-        <span id="final-score" class="final-score"></span>
+      <h2 id="result-title" class="result-title"></h2>
+      <p id="result-desc" class="result-desc"></p>
+      <div class="score-final">
+        <span>ĐIỂM TROLL CỦA KHÁNH</span>
+        <span id="final-score" class="score-number"></span>
       </div>
-      
-      <div class="reward-box">
+      <div class="reward">
         <p class="reward-title">PHẦN THƯỞNG ĐẶC BIỆT</p>
-        <p id="reward-text" class="big-reward">Một cái dái troll siêu to khổng lồ 💀<br>Khánh ơi, mày là Tường Vi thật rồi!</p>
+        <p id="reward-text" class="big-reward">Một cái dái troll siêu to khổng lồ 💀<br>Khánh ơi, mày chính là Tường Vi bản gốc!</p>
       </div>
-
-      <button id="btn-restart" class="neon-btn">🔄 LÀM LẠI TỪ ĐẦU</button>
-      <button id="secret" class="secret-btn">ĐỪNG BẤM NẾU MÀY KHÔNG MUỐN BỊ TROLL NGƯỢC</button>
+      <button id="btn-restart" class="neon-btn">LÀM LẠI TOÀN BỘ CHIẾN DỊCH</button>
+      <button id="secret1" class="secret-btn">ĐỪNG BẤM</button>
+      <button id="secret2" class="secret-btn">CÒN CÁI NÀY NỮA ĐỪNG BẤM</button>
     </div>
   </div>
 
